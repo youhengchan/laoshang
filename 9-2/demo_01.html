@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>9-2 demo 01</title>
+    <style type="text/css">
+      .sty {
+        width: 300px;
+        /* height: 200px; */
+        height: auto;
+        background: #eee;
+        border: 1px solid #666;
+        margin: 10px auto;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .sty:hover {
+        box-shadow: 4px 5px 13px #333;
+        cursor: pointer;
+        animation: bg_color 3s;
+      }
+      .sty h1 {
+        color: #f00;
+        font-size: 22px;
+        font-weight: normal;
+      }
+      .sty p {
+        color: #4c1fff;
+        margin: 0;
+      }
+      .container {
+        margin-bottom: 20px;
+      }
+      @keyframes bg_color {
+        from {
+          background: #eee;
+          left: 0px;
+          top: 0px;
+        }
+        to {
+          background: rgb(101, 212, 226);
+          left: 100px;
+          top: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sty">
+      <h1>标题 9-2 Demo 01</h1>
+      <div class="container">
+        <p>I'm kiko</p>
+        <p>我今年 22</p>
+        <p>单身，有钱，长得帅</p>
+      </div>
+    </div>
+  </body>
+</html>
