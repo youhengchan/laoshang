@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      h1 {
+        color: #7035b9;
+        font-size: 24px;
+      }
+      p {
+        color: #f00;
+        font-weight: bold;
+      }
+      .sty {
+        color: #0f0;
+        font-weight: normal;
+      }
+      #sty_id {
+        color: #e2d62d;
+        font-weight: normal;
+      }
+      .font_sty {
+        font-style: normal;
+      }
+      .div_style_1 {
+        width: 33.33%;
+        height: 100px;
+        background-color: #ddd;
+      }
+      .div_style_2 {
+        width: 33.33%;
+        height: 100px;
+        background-color: rgb(222, 96, 96);
+        /* overflow: hidden; */
+      }
+      .div_style_3 {
+        width: 33.33%;
+        height: 100px;
+        background-color: rgb(31, 199, 140);
+      }
+      /* 浮动，一共四个取值 left | right | none | inherit  */
+      .fl {
+        float: right;
+      }
+      .wrap {
+        width: 1000px;
+        /* height: 150px; */
+        height: auto;
+        background-color: #666;
+        /* 设置上下外边距 10px，左右水平居中 */
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>这是 header，页面头部</h1>
+    </div>
+    <!-- 最外层的父 div 容器 -->
+    <div class="wrap">
+      <div class="div_style_1 fl">
+        <h1>我是 kiko</h1>
+        <p>这是一句说明文字</p>
+      </div>
+      <div class="div_style_2 fl">
+        <h2 class="sty">现在正在学习 web 零基础课</h2>
+        <b id="sty_id">今年22</b>
+        <em class="sty font_sty">单身、有钱、长得帅</em>
+      </div>
+      <div class="div_style_3 fl"></div>
+    </div>
+    <div class="wrap">
+      <h1>这是 footer，页面尾部</h1>
+    </div>
+  </body>
+</html>
