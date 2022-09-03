@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>4 Demo 01</title>
+    <style type="text/css">
+      .box {
+        width: 530px; /* 600 - 50 - 0 - 10 * 2 px */
+        height: 570px; /* 600 - 10 - 0 - 10 * 2 px */
+        /* 背景色，背景图 */
+        background-color: #00f;
+        background-image: url("./assets/beta-mi-white.png");
+        background-repeat: no-repeat;
+        background-position: 100px 400px;
+        /* 边框的 css 属性样式 */
+        border: 10px solid rgb(249, 245, 12);
+        padding: 10px 0 0 50px;
+      }
+      .box2 {
+        width: 600px;
+        height: 600px;
+        /* 背景色，背景图 */
+        background-color: #00f;
+        /* 边框的 css 属性样式 */
+        /* border: 10px solid rgb(123, 12, 249); */
+        /* 字体 */
+        font-size: 100px;
+        font-family: bold;
+        color: #dff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="./assets/beta-mi-white.png" />
+    </div>
+    <div class="box2">BOX 2</div>
+  </body>
+</html>
+
+<!-- CSS 盒模型 4-2 -->
+<!-- 
+  padding 和 border 的值 会成为它所在的那个容器宽高的一部分
+  一个 html 元素的实际大小 = 元素宽高 + border + padding 
+ -->
+
+<!-- 
+  这种情况下，为了让 html 标签，保持原来的大小
+  就需要在 html 标签的宽、高之中
+  减去 border 和 padding 的值
+  这样整个页面的布局不会发生变化，元素占有的空间大小、位置不变
+  -->
