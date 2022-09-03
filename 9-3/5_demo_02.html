@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <style type="text/css">
+      .sty_1 {
+        width: 100px;
+        height: 50px;
+        border: 5px solid rgb(24, 22, 22);
+        margin: 5px;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        background-color: #e40a0a;
+        /* 定位 static, relative, fixed, absolute */
+        /* static, 就是 position 的默认值，加了和没加一样，会把自己位置腾出来 */
+        /* relative, 相对 html 标签原来所在的位置的左上角进行偏移, 会保留原来的位置 */
+        /* fixed 不常用 */
+        /* absolute, 绝对定位，相对于视窗的左上角定位 */
+      }
+      .pa {
+        /* 绝对定位 */
+        position: absolute;
+        left: 100px;
+        top: 40px;
+      }
+      .pr {
+        /* 相对定位 */
+        position: relative;
+        left: 10px;
+        top: 4px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sty_1 pa">1</div>
+    <div class="sty_1">2</div>
+    <div class="sty_1 pr">3</div>
+    <div class="sty_1 pr">4</div>
+  </body>
+</html>
+
+<!-- css 的定位 -->
+<!-- 
+  position, 定位，常用的值有 4 个
+  static | relative | fixed | absolute
+  css 定位属性的作用：用于把 html 标签设置在页面上的任意位置
+  看 demo1.html 
+ -->
+
+<!-- 
+  position 一般和 left 和 top 组合使用
+  
+-->
