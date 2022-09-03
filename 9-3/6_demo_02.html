@@ -1,1 +1,57 @@
 <!-- 定位高度计算、浮动 -->
+
+<!-- float 浮动 -->
+<!-- 使得 html 标签向左、右移动 -->
+<!-- 直到它的边框，碰到了另一个边框或者父容器的边为止 -->
+
+<!-- float，它也可以让 html 元素脱离文档流, 脱离文档流之后，所在的 html 标签不再参与各个容器高度的计算 -->
+
+<!-- CSS 清除浮动 -->
+<!-- 
+  CSS 的清除浮动的方式有很多
+  后面用到的时候会讲到
+ -->
+<!-- 清除浮动 clear 有四个取值:
+  clear: left\right\none\both
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>6 Demo 02 float</title>
+    <style type="text/css">
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(214, 95, 208);
+        margin: 10px;
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .fl {
+        float: left;
+        background-color: #00f;
+      }
+      .fr {
+        float: right;
+        background-color: rgb(34, 177, 202);
+      }
+      /* 清除浮动  */
+      .cle {
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fl">1</div>
+    <div class="fl cle">2</div>
+    <div class="fr">3</div>
+    <div class="fl">4</div>
+    <div class="fl">5</div>
+  </body>
+</html>
