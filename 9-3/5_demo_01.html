@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>4 Demo 03</title>
+    <style type="text/css">
+      ul,
+      ol,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        width: 1100px;
+        height: 90px;
+        background-color: #733536;
+        margin: 0 auto;
+        text-align: center; /* 让内容水平居中，文字图片 */
+      }
+      .center {
+        margin: 0 auto;
+      }
+      .slider {
+        width: 1100px;
+        /* height: auto; */
+        height: 490px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .img_logo {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      /* 导航条 */
+      .nav {
+        width: 720px;
+        /* height: 30px; */
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 11px;
+      }
+      .nav li {
+        color: #fff;
+        float: left;
+        list-style: none; /* 设置 li 标签的样式，一般它的值是 none */
+        margin-top: 0;
+        padding-right: 60px;
+      }
+      /* left-front-right aspects */
+      .good_three_aspects {
+        width: auto;
+        height: 200px;
+        margin: 29px auto;
+        background-color: #733536;
+      }
+      .good_three_aspects li {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <img class="img_logo" src="assets/logo.PNG" />
+      <div class="nav">
+        <ul>
+          <li>首页</li>
+          <li>全部宝贝</li>
+          <li>沙发</li>
+          <li>椅子</li>
+          <li>柜子</li>
+          <li>茶几</li>
+          <li>展厅</li>
+          <li>收藏我们</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 大轮播图 -->
+    <div class="slider">
+      <img src="./assets/nordic_simple_style.PNG" />
+    </div>
+    <!-- 椅子的左中右三个视图 -->
+    <div class="good_three_aspects">
+      <ul>
+        <li>
+          <img src="assets/left_aspect.PNG" />
+        </li>
+        <li>
+          <img src="assets/front-aspect.PNG" />
+        </li>
+        <li>
+          <img src="assets/right_aspect.PNG" />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- 这一节要使用到新的标签 dl, dt, dd -->
+<!-- 
+  dl: 也是列表，主要用于纵向的列表，definition list 
+  dt：是用来表示每一个列表项的头, definition title
+  dd: 用来表示每一个列表项的身体, definition description
+  dl, dt, dd 没有对应的中文含义，它们只是普通的 html 标签
+ -->
