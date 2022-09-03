@@ -1,0 +1,63 @@
+<!-- css 定位，文档流 -->
+<!-- css 的定位本质是 html 标签脱离 文档流 -->
+<!-- 文档流是什么？ -->
+<!-- 
+  文档流，现在阶段，不存在，只是一个理解上的概念。
+  口头描述：文档流就是浏览器读取、解析、渲染（绘制） html 标签的过程 
+ -->
+
+<!-- 还要再说一个概念：浏览器，是怎么对 html 标签，进行位置排列的 -->
+
+<!-- 
+  浏览器对 html 标签的位置排列是根据每个容器的高度、内外边距等其他元素
+  加在一起，相当于某个元素的 y 坐标
+-->
+
+<!-- CSS 定位的三种机制 -->
+<!-- 
+  一个是普通流，不显示指定 position/float 的时候，默认就是普通流，浏览器自动计算并排列元素
+  二是浮动，float
+  三是定位，position，它有四种不同的类型
+    1. static, 正常
+    2. relative，相对定位，相对它原来位置的左上角为原点，进行偏移，保留原来的位置
+    3. absolute，绝对定位，相对视窗，如果父元素是相对，则相对父元素，不保留原来的位置
+    4. fixed，固定，和绝对定位差不多，相对于浏览器窗口本身
+ -->
+
+<!-- CSS 定位的 4 个关键字  -->
+<!-- 通过4个关键字用来设置位置，分别是 left, top, right, bottom  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>6 Demo 01</title>
+    <style type="text/css">
+      div {
+        width: 200px;
+        height: 100px;
+        background: #f00;
+        margin: 10px;
+        color: #fff;
+        font-size: 33px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .pr {
+        position: relative;
+      }
+      .pa {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div class="pr">3</div>
+    <div>4</div>
+    <div>5</div>
+  </body>
+</html>
