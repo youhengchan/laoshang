@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>5 Demo 03</title>
+    <style>
+      .wrap {
+        width: 900px;
+        height: 150px;
+        background-color: rgb(172, 16, 16);
+        margin: 10px auto;
+        position: relative;
+      }
+      .list {
+        /* width: 33%; */
+        width: 300px;
+        height: 140px;
+        background-color: rgb(16, 172, 50);
+        border: 1px solid rgb(172, 16, 16);
+        float: left;
+        font-size: 66px;
+        line-height: 140px;
+        text-align: center;
+        color: white;
+      }
+      .pa_1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+      .pa_2 {
+        position: absolute;
+        right: 0;
+        right: 0;
+        background-color: blueviolet;
+      }
+      .pa_3 {
+        position: absolute;
+        left: 33%;
+        top: 0;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="list pa_1">1</div>
+      <div class="list pa_2">2</div>
+      <div class="list pa_3">3</div>
+    </div>
+  </body>
+</html>
+
+<!-- absolute, 绝对定位 -->
+<!-- 
+  1. 相对于【浏览器页面的左上角】为原点，进行偏移
+  2. 不保留，容器原来的位置
+  3. 如果它的父级容器（就是外层的 HTML 标签）是相对定位，
+    那么它将以父容器的左上角为原点，进行定位。(子绝对，父相对)
+ -->
+
+<!-- relative, 相对定位 -->
+<!-- 
+  1. 相对于【它原来所在的位置的左上角】为原点，进行偏移
+  2. 会保留，容器原来的位置
+ -->
