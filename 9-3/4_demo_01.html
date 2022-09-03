@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>4 Demo 01</title>
+    <style type="text/css">
+      .box {
+        width: 1000px;
+        height: 1000px;
+        /* 背景色，背景图 */
+        background-color: #00f;
+        background-image: url("./assets/beta-mi-white.png");
+        background-repeat: no-repeat;
+        background-position: 100px 400px;
+        position: relative;
+        /* 边框的 css 属性样式 */
+        border: 10px solid rgb(249, 245, 12);
+      }
+      .container {
+        width: 1200px;
+        height: 1200px;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(225, 83, 31);
+        position: absolute;
+        /* 上、右、下、左，顺时针 */
+        padding: 50px 100px 200px 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="./assets/beta-mi-white.png" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- CSS 盒模型 -->
+<!-- 每个html标签（容器）都可以装 文字、图片、音视频等等 -->
+<!-- 将 html 标签作为一个容器、盒子来看待，就有一个盒模型的概念 -->
+<!-- 盒模型，就是每一个 html 标签它自身的 css 的一些特性 -->
+
+<!-- 不好理解的概念，需要大量的例子来加深理解 -->
+
+<!-- 
+    当在同一个文档中同一个图片被引用的时候，如果是背景，则图片是该标签的一部分
+    如果本身使用 img 标签引用，则该图像是一个单独的标签
+-->
+
+<!-- padding 内边距
+  padding, 上右下左，顺时针，设置内边距
+-->
