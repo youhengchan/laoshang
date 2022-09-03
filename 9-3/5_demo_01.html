@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>4 Demo 03</title>
+    <title>5 Demo 01</title>
     <style type="text/css">
       ul,
       ol,
       li {
         list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dl,
+      dt,
+      dd {
         margin: 0;
         padding: 0;
       }
@@ -52,13 +58,49 @@
       }
       /* left-front-right aspects */
       .good_three_aspects {
-        width: auto;
-        height: 200px;
+        width: 735px;
+        /* height: 200px;*/
+        height: auto;
         margin: 29px auto;
         background-color: #733536;
       }
       .good_three_aspects li {
         float: left;
+        list-style: none;
+      }
+      /* 这其实就是 css 的群组选择符 */
+      .good_three_aspects ul li p {
+        text-align: center;
+        font-size: 9px;
+        color: #733536;
+      }
+      .big_good_img {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .bottom_3_classes {
+        text-align: center;
+        width: 720px;
+        height: 295px;
+        margin: 11px auto;
+      }
+      .bottom_3_classes dl {
+        width: 229px;
+        height: 290px;
+        border: 1px solid #ec6062;
+        float: left;
+      }
+      .mar_r_9px {
+        margin-right: 9px;
+      }
+      .bottom_3_classes dl dt {
+        width: 134px;
+        height: 85px;
+        background-image: url("./assets/bottom-dt.PNG");
+        margin: 15px auto;
+      }
+      .bottom_3_classes dl dd {
+        text-align: center;
       }
     </style>
   </head>
@@ -88,14 +130,42 @@
       <ul>
         <li>
           <img src="assets/left_aspect.PNG" />
+          <p>左侧展示</p>
         </li>
         <li>
           <img src="assets/front-aspect.PNG" />
+          <p>正面展示</p>
         </li>
         <li>
           <img src="assets/right_aspect.PNG" />
+          <p>右侧展示</p>
         </li>
       </ul>
+    </div>
+    <!-- 单独大图 -->
+    <div class="big_good_img">
+      <img src="assets/simpleist.PNG" />
+    </div>
+    <!-- 底部的三个类别 -->
+    <div class="bottom_3_classes">
+      <dl class="mar_r_9px">
+        <dt></dt>
+        <dd>
+          <img src="assets/bottom-1.PNG" />
+        </dd>
+      </dl>
+      <dl class="mar_r_9px">
+        <dt></dt>
+        <dd>
+          <img src="assets/bottom-2.PNG" />
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <img src="assets/bottom-3.PNG" />
+        </dd>
+      </dl>
     </div>
   </body>
 </html>
@@ -107,3 +177,10 @@
   dd: 用来表示每一个列表项的身体, definition description
   dl, dt, dd 没有对应的中文含义，它们只是普通的 html 标签
  -->
+
+<!-- 用法：
+  <dl>
+    <dt>头部</dt>
+    <dd>描述部分</dd>
+  </dl>
+-->
