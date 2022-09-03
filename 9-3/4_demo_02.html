@@ -17,6 +17,8 @@
         /* 边框的 css 属性样式 */
         border: 10px solid rgb(249, 245, 12);
         padding: 10px 0 0 50px;
+        /* 外边距 */
+        margin: 20px 0 20px 50px;
       }
       .box2 {
         width: 600px;
@@ -29,6 +31,8 @@
         font-size: 100px;
         font-family: bold;
         color: #dff;
+        /* 外边距 */
+        margin: 20px 0 0 20px;
       }
     </style>
   </head>
@@ -52,3 +56,22 @@
   减去 border 和 padding 的值
   这样整个页面的布局不会发生变化，元素占有的空间大小、位置不变
   -->
+
+<!-- Margin
+  1. 两个相邻的 html 标签，它们之间 margin 值大的，会起作用
+  2. margin，外边距的值，不会叠加
+  3. 类比：每个人的安全距离都是1米，那么两个人只要保持1m的距离就满足了，
+     否则就是保持较大的那个人就可以
+  -->
+
+<!-- CSS 的盒模型，就包括了以下几个 css 的属性
+    宽，width
+    高, height 
+    背景色, background-color
+    背景图, background-image
+    内边距, padding
+    外边距, margin
+    边框, border
+  -->
+
+<!-- 知道了盒模型，就知道了在网页中如何设置 html 元素的形态 -->
