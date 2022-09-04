@@ -1,1 +1,60 @@
 <!-- 数据类型 Undefined, Null -->
+<!-- 
+  ECMAScript 
+  简单数据类型有 5 种，分别是：
+  undefined, null, boolean, number, string
+  复杂数据类型, Object
+  它的本质是一组无序的键值对的集合。
+
+  ECMAScript，它不支持自定义类型。可以自定义对象。
+
+ -->
+
+<!-- typeof 操作符 -->
+<!-- 
+  通过它可以查看当前变量的类型
+  typeof xxx, 例:
+  var _v = 123
+  typeof _v
+  "number"
+
+  var _s = 'str';
+  typeof _s
+  "string"
+
+  var o = {}
+  typeof o
+  "object"
+  
+  typeof undefined
+  "undefined"
+
+  typeof null
+  "object"
+ -->
+
+<!-- undefined -->
+<!-- 
+  Undefined 类型只有一个值,就是 undefined
+  声明一个变量, 但是没有赋值的时候, 变量的值就是 undefined
+  -->
+
+<!-- Null -->
+<!-- 
+  Null, 它也是只有一个值, 就是 null
+  表示 一个空的指针, 在 js 里就是一个空对象引用
+  所以, typeof null 返回值为 object
+
+  在有代码里, 你会看到声明一个空的临时对象的变量,它的值是 null
+
+  undefined, 它是从 null 里面派生出来的
+  所以他们的相等性是 true (使用两个== 为 true,使用三个 === 为false)
+
+  >undefined == null
+  >true
+
+  因为 undefined, 它是从 null 里面派生出来的
+  所以, ECMA-262 对它们的相等性测试是 true
+
+  引入 null 和 undefined 的目的, 就是为了区分空对象 null 和未初始化的变量 undefined
+ -->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>6 Demo 06</title>
+  </head>
+  <body></body>
+  <script>
+    var xx;
+    console.log(xx); /* undefined */
+    console.log(xx == undefined); /* true */
+    // console.log(ydbz); /* Uncaught ReferenceError: ydbz is not defined */
+    console.log(typeof ydbz); /* undefined */
+  </script>
+</html>
+
+<!-- 
+  去检测一个未创建的变量的类型, 也会返回 undefined, 有点奇怪, 但是这个语言设计的时候就是这样
+  
+  可以对一个没有定义的变量进行 typeof 操作, 不报错, 且返回 undefined
+ -->
