@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>6 Demo Varaible Lifecycle</title>
+  </head>
+  <body></body>
+  <!-- 下面这个例子，要从变量的生命周期的角度来理解，而不是作用域 -->
+  <script>
+    // 定义一个函数
+    function fn() {
+      // 创建一个变量并赋值
+      // var _v = 123;
+      _v = 123;
+    }
+    fn();
+    console.log(_v); /* var 局部报错, _v 不报错，正常输出 123  */
+  </script>
+</html>
