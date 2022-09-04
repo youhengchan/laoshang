@@ -1,1 +1,122 @@
-<!-- css 浮动，清除浮动 -->
+<!-- css 浮动，清除浮动，相对完善的方法 -->
+<!-- 除了在上一节当中使用了
+  .cle {
+    clear: both 
+  }
+  的方案来清除浮动，还有一种相对完善的清除浮动的方案
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>6 Demo 03 clear float</title>
+    <style type="text/css">
+      .wrap {
+        width: 400px;
+        /* height: 200px; */
+        background-color: #f00;
+      }
+      .wrap img {
+        float: left;
+      }
+      /* 添加 :after 伪元素 */
+      /*  用来在元素的内容后面，添加新的内容 */
+      .wrap:after {
+        content: "我是 kiko";
+        clear: both;
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+        height: 0;
+        line-height: 0;
+      }
+      .inner_1 {
+        width: 200px;
+        height: 200px;
+        clear: both;
+        background-color: blue;
+      }
+      .inner_2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(228, 103, 31);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <img src="assets/imgxxx.png" />
+      <div class="inner_1"></div>
+      <div class="inner_2"></div>
+    </div>
+  </body>
+</html>
+
+<!-- 当一个容器没有高度，并且它的唯一子元素是 float 的时候，这个容器它的高度就没有了，因为父容器得不到子元素的高度，没有子元素将它撑起来了 -->
+
+<!-- 
+  需要使用伪元素，这里使用 :after 伪元素 
+  :after, 用来在元素的内容的后面，添加新的内容。
+-->
+
+<!-- 
+  .wrap:after { 
+    content: '我是 kiko';
+    clear: both; 
+    display: block;
+  }  
+
+  如果这么写，那么，对于 div 中的 img 元素后面会添加上一个伪元素 ::after, 或者说就是 div 中的最后一个元素，这个伪元素 ::after 是一个行内元素。
+
+  因为 img 使用了浮动 float:left，所以伪元素会和浮动的 img 在同一行。
+  为了将整个容器的高度撑起来，需要将这个伪元素 ::after 变成一个块元素，这样就可以
+
+  after, 也是一个 html 容器
+  当它是清除了浮动的时候，就回到了普通文档流里，就可以计算它的高度了。
+  那么这是，父容器就可以计算出总额高度了
+  此时父容器自然就可以显示了
+-->
+
+<!-- 
+  网络上的清除浮动的版本:
+  .clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+  .clearfix {
+    *zoom: 1; /* 解决 IE 的问题 */
+  }
+  最后在相应的 div 元素内放 clearfix 类
+  <div clear="class1 clearfix"></div>
+ -->
+
+<!-- html 标签分为两种
+1、行级容器：
+  它的宽、高不起作用，默认横向排列
+2、块级元素：
+  它的宽高起作用，默认横向独占一行
+-->
+
+<!-- 
+display: block
+  1. 是让 html 标签显示
+  2. 是把一个行级容器，转换为块级容器
+ -->
+
+<!-- 
+  display: inline
+  把一个块级容器，转换为行级容器（元素）。
+  -->
+
+<!-- 
+  visibility: hidden
+  隐藏一个 html 标签，但是在隐藏内容的同时
+  保留此 html 标签占用的空间
+ -->
