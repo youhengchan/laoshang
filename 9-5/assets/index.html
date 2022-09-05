@@ -1,0 +1,188 @@
+<!-- 大多情况下，index 为是首页 -->
+<!-- 椅子项目首页完成 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>吾言</title>
+    <style type="text/css">
+      ul,
+      ol,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dl,
+      dt,
+      dd {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        width: 1100px;
+        height: 90px;
+        background-color: #733536;
+        margin: 0 auto;
+        text-align: center; /* 让内容水平居中，文字图片 */
+      }
+      .center {
+        margin: 0 auto;
+      }
+      .slider {
+        width: 1100px;
+        /* height: auto; */
+        height: 490px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .img_logo {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      /* 导航条 */
+      .nav {
+        width: 720px;
+        /* height: 30px; */
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 11px;
+      }
+      .nav li {
+        color: #fff;
+        float: left;
+        list-style: none; /* 设置 li 标签的样式，一般它的值是 none */
+        margin-top: 0;
+        padding-right: 60px;
+      }
+      /* left-front-right aspects */
+      .good_three_aspects {
+        width: 735px;
+        /* height: 200px;*/
+        height: auto;
+        margin: 29px auto;
+        background-color: #733536;
+      }
+      .good_three_aspects li {
+        float: left;
+        list-style: none;
+      }
+      /* 这其实就是 css 的群组选择符 */
+      .good_three_aspects ul li p {
+        text-align: center;
+        font-size: 9px;
+        color: #733536;
+      }
+      .big_good_img {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .bottom_3_classes {
+        text-align: center;
+        width: 720px;
+        height: 295px;
+        margin: 11px auto;
+      }
+      .bottom_3_classes dl {
+        width: 229px;
+        height: 290px;
+        border: 1px solid #ec6062;
+        float: left;
+      }
+      .mar_r_9px {
+        margin-right: 9px;
+      }
+      .bottom_3_classes dl dt {
+        width: 134px;
+        height: 85px;
+        background-image: url("./assets/bottom-dt.PNG");
+        margin: 15px auto;
+      }
+      .bottom_3_classes dl dd {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <img class="img_logo" src="assets/logo.PNG" />
+      <div class="nav">
+        <ul>
+          <li>首页</li>
+          <li>全部宝贝</li>
+          <li>沙发</li>
+          <li>椅子</li>
+          <li>柜子</li>
+          <li>茶几</li>
+          <li>展厅</li>
+          <li>收藏我们</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 大轮播图 -->
+    <div class="slider">
+      <img src="./assets/nordic_simple_style.PNG" />
+    </div>
+    <!-- 椅子的左中右三个视图 -->
+    <div class="good_three_aspects">
+      <ul>
+        <li>
+          <img src="assets/left_aspect.PNG" />
+          <p>左侧展示</p>
+        </li>
+        <li>
+          <img src="assets/front-aspect.PNG" />
+          <p>正面展示</p>
+        </li>
+        <li>
+          <img src="assets/right_aspect.PNG" />
+          <p>右侧展示</p>
+        </li>
+      </ul>
+    </div>
+    <!-- 单独大图 -->
+    <div class="big_good_img">
+      <img src="assets/simpleist.PNG" />
+    </div>
+    <!-- 底部的三个类别 -->
+    <div class="bottom_3_classes">
+      <dl class="mar_r_9px">
+        <dt></dt>
+        <dd>
+          <img src="assets/bottom-1.PNG" />
+        </dd>
+      </dl>
+      <dl class="mar_r_9px">
+        <dt></dt>
+        <dd>
+          <img src="assets/bottom-2.PNG" />
+        </dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd>
+          <img src="assets/bottom-3.PNG" />
+        </dd>
+      </dl>
+    </div>
+  </body>
+</html>
+
+<!-- 这一节要使用到新的标签 dl, dt, dd -->
+<!-- 
+  dl: 也是列表，主要用于纵向的列表，definition list 
+  dt：是用来表示每一个列表项的头, definition title
+  dd: 用来表示每一个列表项的身体, definition description
+  dl, dt, dd 没有对应的中文含义，它们只是普通的 html 标签
+ -->
+
+<!-- 用法：
+  <dl>
+    <dt>头部</dt>
+    <dd>描述部分</dd>
+  </dl>
+-->
